@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout-Survey</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="development courses" />
+    <meta name="keywords" content="HTML CSS Learning Layout" />
+    <meta name="author" content="Greu Bianca" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Averia Serif Libre"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="resources/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="title-wrapper">
+          <h1>Notifications Survey</h1>
+        </div>
+      </header>
+      <div class="container-wrapper">
+        <div class="details-wrapper">
+          <div class="details1">
+            We`re working on our notifications system to make our product work
+            better.
+          </div>
+          <div class="details2">
+            The survey consist in several questions and usually takes 5-7
+            minutes to complete
+          </div>
+        </div>
+        <form action="mailto:bianca.greu@yahoo.com">
+          <div class="email">
+            <label for="mail">Enter your email:</label>
+            <input
+              required
+              class="input-validation"
+              type="text"
+              id="mail"
+              placeholder="Your answer"
+            />
+          </div>
+          <div class="question1">
+            <div>Are you an admin or a member on our Board?</div>
+            <div class="answers-q1">
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question1"
+                  name="answer1"
+                  value="Admin"
+                />
+                <label for="question1">Admin</label>
+              </div>
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question12"
+                  name="answer1"
+                  value="Member"
+                />
+                <label for="question12">Member</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question2">
+            <div>How do you collaborate in our Board?</div>
+            <div class="answers-q2">
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question2"
+                  name="answer-q2"
+                  value="Create"
+                />
+                <label for="question2">Create and edit content</label>
+              </div>
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question22"
+                  name="answer-q2"
+                  value="Comment"
+                />
+                <label for="question22"> Comment and leave comment</label>
+              </div>
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question23"
+                  name="answer-q2"
+                  value="Review"
+                />
+                <label for="question23">Just review created comment</label>
+              </div>
+              <div>
+                <input
+                required
+                  type="radio"
+                  id="question24"
+                  name="answer-q2"
+                  value="Other"
+                />
+                <label for="question24"> Other:</label>
+                <input 
+                required
+                  type="text"
+                  id="input-text"/>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button next">
+        <a href="file:///C:/Users/Foca/Desktop/It%20School/first_html/Assignments/Assignment-7/index2.html"> next</a>
+      </div>
+    </div>
+  </body>
+</html>
