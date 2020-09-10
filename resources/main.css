@@ -12,6 +12,8 @@ am incercat tot ce am stiut si nimic,
 In sensul ca la mine pe ecran se vede bine dar cand 
 dau Zoom-out imi apare in partea de jos alb */
 
+/* se vede alb pentru ca html si body au alb de default. De fapt face ce ii zici tu. El iti da zoom out la main si se intampla exact asta. Nu inteleg de ce asta inseamna ca nu functioneaza bine height-ul? */
+
 .main {
   display: flex;
   align-items: center;
@@ -170,6 +172,8 @@ form {
   margin: 20px;
   border-radius: 10px;
 }
+
+/* width si height direct pe imagine nu recomand. mai ok sa te raportezi la wrapper sa fi sigura ca scaleaza corepunzator */
 img {
   width: 50px;
   height: 50px;
@@ -193,9 +197,13 @@ ca "exceeded" e situat mai in partea dreapta... nici asta
 nu am reusit sa o fac oricat am incercat  */
 
 .max-expectations {
+  /* layout-ul nu se implementeaza cu margin, este extrem de manual. Puteai sa optezi pt flex sau float pentru o implementare mult mai dinamica */
   margin-left: 350px;
-  text-align: justify;
-  width: 10px;
+  /* text-align: justify; */
+  /* asta iti alineaza textul la dreapta, ceea ce la tine nu prea putea sa mearga pantru ca ii dadeai un width de 10px care este extrem de mic si de fapt mergea, facea ce ii ziceai dar nu aveai efectul ce ti-l inchipuiai tu */
+  text-align: right;
+  /* width: 10px? nu inteles scopul */
+  width: 100px;;
   height: 30px;
 }
 .back-send-buttons {
